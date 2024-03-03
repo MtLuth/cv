@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gentium Plus', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    max-width: 1500px;
+    min-height: 1000px;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left {
+    position: relative;
+    background: #1B3C73;
+    padding: 40px;
+}
+
+.container .right {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: solid rgb(255, 255, 255, 0.2);
+}
+
+.profile-container .personal-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-container .personal-img img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-container .profile-text {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile-container .profile-text h2 span {
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.contact-container {
+    padding-top: 40px;
+}
+
+.contact-container h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contact-container ul {
+    position: relative;
+}
+
+.contact-container ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.contact-container ul li .icon {
+    display: inline-block;
+    font-size: 16px;
+    color: #F7DED0;
+    width: 30px;
+}
+
+.contact-container ul li .text {
+    color: #fff;
+}
+
+.contact-container.career-objective p {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.contact-container.education h5 {
+    color: #F7DED0;
+    font-size: 1.2em;
+}
+
+.contact-container.education h4 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 50;
+    font-style: italic;
+}
+
+.contact-container.education a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-container.education a:hover {
+    color: red;
+}
+
+.about {
+    margin: 20px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #1B3C73;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.information ul {
+    position: relative;
+    list-style: none;
+}
+
+.information .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.information ul li {
+    position: relative;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.information ul li .icon {
+    display: inline-block;
+    width: 30px;
+    color: #F6B17A;
+}
+
+.timeline {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 25px;
+    grid-template-columns: 5px 1fr;
+}
+
+.timeline-left {
+    position: relative;
+    background-color: #1D24CA;
+}
+
+.timeline-point {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: #1D24CA;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+
+.timeline-component {
+    padding: 0px 20px 20px 20px;
+}
+
+.time {
+    position: relative;
+    font-size: 1.2em;
+    top: -10px;
+    text-transform: uppercase;
+    color: #1D24CA;
+}
+
+.project-item {
+    margin-left: 20px;
+}
+
+.project-list ul {
+    list-style: none;
+}
+
+.proj-name {
+    font-size: 1.4em;
+    font-weight: 1000;
+}
+
+.project-item .detail {
+    font-size: 20px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+.project-item a:hover {
+    color: red;
+}
+
+.skills-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container h3 {
+   text-transform: uppercase;
+   font-size: 1.3em; 
+   margin:5px 0;
+}
+
+.percent {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1D24CA;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
